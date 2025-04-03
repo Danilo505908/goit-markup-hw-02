@@ -1,4 +1,4 @@
-/* body style */
+/* Загальні стилі для шрифтів */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -6,13 +6,7 @@ body {
     margin: 0;
 }
 
-/* header style */
-.header {
-    background-color: #fff;
-    height: 72px;
-    margin: 0;
-}
-
+/* Логотип */
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -29,18 +23,21 @@ body {
     color: #2e2f42;
 }
 
-.nav ul {
+/* Загальні стилі для навігації та контактів */
+.nav ul,
+.address ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
-.nav ul li {
+.nav ul li,
+.address ul li {
     margin-right: 20px;
 }
 
-.nav ul li a {
-    font-family: "Roboto", sans-serif;
+.nav ul li a,
+.address ul li a {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -50,40 +47,18 @@ body {
 }
 
 .nav ul li a:hover,
-.nav ul li a:focus {
-    color: #404bbf;
-}
-
-.address {
-    font-style: normal;
-}
-
-.address ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.address ul li {
-    margin-left: 20px;
-}
-
-.address ul li a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #434455;
-}
-
+.nav ul li a:focus,
 .address ul li a:hover,
 .address ul li a:focus {
     color: #404bbf;
 }
 
-/* hero style */
+/* Стиль для адреси */
+.address {
+    font-style: normal;
+}
+
+/* Герой-секція */
 .hero {
     text-align: center;
     margin: 0;
@@ -91,7 +66,6 @@ body {
 }
 
 .hero h1 {
-    font-family: "Roboto", sans-serif;
     font-size: 56px;
     font-weight: 700;
     line-height: 107%;
@@ -114,4 +88,33 @@ body {
 .hero button:hover,
 .hero button:focus {
     background-color: #404BBF;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
 }
