@@ -1,120 +1,90 @@
-/* Загальні стилі для шрифтів */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
-    background-color: #FFFFFF;
-    margin: 0;
+    background-color: #fff;
 }
 
-/* Логотип */
+/* header style */
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    text-decoration: none;
-    margin-right: 76px;
 }
 
-.logo span {
+.header-logo .logo-part {
     color: #2e2f42;
 }
 
-/* Загальні стилі для навігації та контактів */
-.nav ul,
-.address ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.footer-logo .logo-part {
+    color: #f4f4fd;
 }
 
-.nav ul li,
-.address ul li {
-    margin-right: 20px;
-}
-
-.nav ul li a,
-.address ul li a {
-    font-size: 16px;
+.nav-link {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-decoration: none;
 }
 
-.nav ul li a:hover,
-.nav ul li a:focus,
-.address ul li a:hover,
-.address ul li a:focus {
-    color: #404bbf;
-}
-
-/* Стиль для адреси */
-.address {
+.contacts {
     font-style: normal;
 }
 
-/* Герой-секція */
-.hero {
-    text-align: center;
-    margin: 0;
+.contacts-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.nav-link:hover, 
+.nav-link:focus, 
+.contacts-link:hover, 
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+.page-hero {
     background-color: #2e2f42;
 }
 
-.hero h1 {
-    font-size: 56px;
+.hero-title {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    line-height: 107%;
-    color: #fff;
-    max-width: 500px;
+    font-size: 56px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
 }
 
-.hero button {
+.hero-button {
+    font-family: "Roboto", sans-serif;
+    font-size: 500;
     font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: #fff;
     background-color: #4d5ae5;
-    cursor: pointer;
 }
 
-.hero button:hover,
-.hero button:focus {
-    background-color: #404BBF;
-}
-
-/* Адаптивність для мобільних пристроїв */
-@media (max-width: 768px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero button {
-        padding: 12px 24px;
-        font-size: 14px;
-    }
-
-    .logo {
-        margin-right: 0;
-    }
+.hero-button:hover,
+.hero-button:focus {
+    background-color:#404BBF;
 }
